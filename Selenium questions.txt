@@ -1,0 +1,44 @@
+1) What is Selenium? What are the different Selenium components? Explain about Selenium Webdriver.
+Answer; Selenlium is a open source Automation Testing framework used to automate web browsers.
+       its components are Selenium IDE,Selenium RC, Selenium Webdriver,Selenium Grid.
+
+2) How does Selenium communicate with the Web browsers?
+Answer; >>>  Webdrivermanager.windows().setup();
+        Initially  Downloads the driver and set up the path
+        >>>  ChromeDriver driver=new ChromeDriver();
+        Then launches the web browser according to which browser driver we have used.
+
+3.What are the locators available  to find an element using Selenium?
+Answer;  id,classname,name,link text,Partial link text,xpath,attribute
+
+4. Why ID is preferable than X-Path?
+Answer;   Id consist of unique characters and can be located quickly but Xpath requires lots of steps .
+
+5.How to select value in dropdown?
+Answer; >> Import the package org.openqa.selenium.support.ui.Select
+        >> create an object ;Select d1=new Select();
+         >>now use that object; 
+         >>3 locators can be use byindex,byvisibletext,byvalue.;d1.SelectByvalue(" ");
+         
+         
+6) What is the difference between Absolute Path and Relative Path?
+ Answer; Absolute X path begins from the Root From the begining.
+         but relative xpath can begin from grand Parent tag,parent tag,child tag.
+
+7) How to verify if the given check box is checked or not (it is not taught but you can explore) Try here: http://leafground.com/pages/checkbox.html
+Answer :      objectname.findelement(By.anylocators).isSelected();
+              The returntype shows in boolean if checked it shows true ,if not false.
+
+8)Difference between System.setProperty and WebDriverManager
+Answer:   WebdriverManager= download the driver and setup the Path
+          System.setProperty=to configure the browser driver path
+
+9) Write the syntax for preceding and following x-paths.
+Answer:  //Eldersibling xpath /following-sibling::youngSibling tagname/xpath
+        //Youngersibling xpath/preceding-sibling::Eldersibling tagname/xpath
+
+10) How to get an attribute value using Selenium WebDriver?
+Answer;   objectname.findelements.(By.locators).getAtrribute("value");
+          Prints the value Entered in console.
+
+
